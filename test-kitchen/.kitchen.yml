@@ -1,0 +1,19 @@
+---
+driver:
+  name: vagrant
+  require_chef_omnibus: true
+
+provisioner:
+  name: chef_zero
+  # data_bags_path: ../../data_bags
+  # environments_path: ../../environments
+  # roles_path: ../../roles
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[sample::default]
+    attributes: {}
