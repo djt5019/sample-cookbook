@@ -5,7 +5,6 @@ Sample cookbook used as a basis for Chef training.
 Objectives
 ----------
 
-* [ ] Create a limited access user for Docker.
 * [ ] Install Docker and supporting APT repos (hint: the apt package name for docker is "docker-engine").
 * [ ] Start the Docker service
 * [ ] Start a MySQL Docker container if one does not already exist.
