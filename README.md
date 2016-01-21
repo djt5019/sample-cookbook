@@ -27,6 +27,20 @@ Tools
 * Rubocop - An opinionated ruby linting utility
 * Foodcritic - A linting utility for Chef cookbooks and assets
 
+Getting Setup
+-------------
+
+1. Install Vagrant
+    * via DMG - `https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1.dmg`
+    * or through Homebrew - `brew install Caskroom/cask/chefdk`
+2. Install ChefDK
+    * via DMG - `https://downloads.chef.io/chef-dk/mac/`
+    * or through Homebrew - `brew install Caskroom/cask/vagrant`
+3. Modify your `$PATH` to include `/opt/chefdk/bin`
+    * You can manually export it - `export PATH="$PATH:/opt/chefdk/bin"`
+    * Or add the `chef shell-init` utility to your shell profile - `test -d '/opt/chefdk' && eval "$(chef shell-init $(basename $SHELL))"`
+4. Run `chef --version`, you should see output indicating the version of Chef you've installed
+5. Run the basic tests for this cookbook - `make test`
 
 References
 ----------
