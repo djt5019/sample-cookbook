@@ -11,7 +11,7 @@ Objectives
 * [ ] Start a MySQL Docker container if one does not already exist.
 * [ ] Install a Crontab that wipes out all dead Docker containers.
 * [ ] Write tests validating the system is up to speed.
-* [ ] <Optional> Use the Docker cookbook to start the MySQL container
+* [ ] **Optional** Use the Docker cookbook to start the MySQL container
 
 Tools
 -----
