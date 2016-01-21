@@ -9,7 +9,7 @@ Objectives
 * [ ] Install Docker and supporting APT packages.
 * [ ] Start the Docker service
 * [ ] Install a Crontab that wipes out all Docker containers.
-* [ ] Start a Docker container running some application if one does not already exist.
+* [ ] Start a MySQL Docker container if one does not already exist.
 * [ ] Write tests validating the system is up to speed.
 
 Tools
@@ -17,6 +17,7 @@ Tools
 
 * ChefDK - Isolated ruby installation and standard community Chef tools
 * Gem - Standard ruby mechanism for installing supporting libraries (called gems)
+* Bundler - Installs gems in an isolated manner that doesn't impact the native Ruby installation (like virtualenv)
 * Vagrant - Allows for easy creation/modification of virtual machines
 * Test-Kitchen - Harness for integration testing Chef recipes
 * Berkshelf - Used for vendoring cookbooks, and in testing, shipping cookbooks to the virtual machine
